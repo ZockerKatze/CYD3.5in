@@ -113,6 +113,8 @@ int ringMeter(int value, int vmin, int vmax, int x, int y, int r, const char *un
 
 
     if (i < v) {
+      // switch case cause yk
+
       switch (scheme) {
         case 0: colour = TFT_RED; break;
         case 1: colour = TFT_GREEN; break;
@@ -156,9 +158,9 @@ int ringMeter(int value, int vmin, int vmax, int x, int y, int r, const char *un
   return x + r;
 }
 
-// #########################################################################
-// Return a 16-bit rainbow colour
-// #########################################################################
+/* #########################################################################
+   Return a 16-bit rainbow colour
+   ######################################################################### */
 unsigned int rainbow(byte value) {
   byte red = 0;
   byte green = 0;
